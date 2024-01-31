@@ -1,10 +1,11 @@
 export default function RSVPBanner() {
   return (
     <section
-      className="daisy-hero min-h-screen"
+      id="rsvp"
+      className="daisy-hero bg-contain bg-repeat min-h-screen"
       style={{
         backgroundImage:
-          "url(https://i.postimg.cc/SQc8WbFc/abstract-liquid-bg.jpg)",
+          "url(https://i.postimg.cc/nrrDSf8m/rm300-pattern-baifern-01-a.jpg)",
       }}
     >
       <div className="daisy-hero-overlay bg-opacity-10"></div>
@@ -12,7 +13,7 @@ export default function RSVPBanner() {
         <div className="flex justify-center items-center align-middle text-center">
           <div className="bg-white text-center w-2/4 p-10">
             <div className="flex flex-col align-middle items-center justify-center text-center">
-              <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-bold font-blackMango text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
+              <h2 className="pb-2 relative mx-0 my-2.5 text-secondary  font-poppins text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
                 RSVP
               </h2>
               <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">

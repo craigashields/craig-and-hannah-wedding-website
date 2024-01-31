@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 
 const blackMango = localFont({
   src: [
@@ -32,4 +33,12 @@ const augustScript = localFont({
   variable: "--font-august",
 });
 
-export { blackMango, augustScript };
+const poppins = Poppins({
+  weight: ["200", "400", "500"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+});
+
+export { blackMango, augustScript, poppins };

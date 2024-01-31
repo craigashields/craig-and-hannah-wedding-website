@@ -2,8 +2,11 @@ import Link from "next/link";
 
 export default function WhereAndWhen() {
   return (
-    <section className="container mx-auto pt-28 pb-28">
-      <div className="grid grid-cols-1 gap-8 md:gap:4 lg:gap-4 xl:gap-4 p-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+    <section
+      id="whenandwhere"
+      className="container-none mx-auto py-10 sm:py-16 lg:py-16 xl:py-16 2xl:py-16 bg-neutral-50"
+    >
+      <div className="grid grid-cols-1 xl:mx-20 gap-8 md:gap:4 lg:gap-4 xl:gap-4 p-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         <div className="flex flex-col align-middle items-center justify-center text-center">
           <div className="pb-4">
             <svg
@@ -19,14 +22,14 @@ export default function WhereAndWhen() {
               />
             </svg>
           </div>
-          <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-bold font-blackMango text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
+          <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-poppins text-4xl sm:text-4xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
             WHEN
           </h2>
           <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
             14<span className="align-super text-xs">th</span> September 2024
           </p>
           <p className="text-gray-500 pt-2 ">A SATURDAY</p>
-          <button className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2">
+          <button className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary">
             ADD TO CALENDAR
           </button>
         </div>
@@ -50,7 +53,7 @@ export default function WhereAndWhen() {
               </g>
             </svg>
           </div>
-          <h2 className="pb-2  relative mx-0 my-2.5 text-secondary font-bold font-blackMango text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
+          <h2 className="pb-2  relative mx-0 my-2.5 text-secondary font-poppins text-4xl sm:text-4xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
             WHERE
           </h2>
           <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
@@ -61,7 +64,7 @@ export default function WhereAndWhen() {
             SEE ON MAP
           </button> */}
           <Link
-            className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2"
+            className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
             href="https://www.google.com/maps/place/Hollin+Green+Ln,+Nantwich/@53.0676321,-2.6086262,17z/data=!3m1!4b1!4m6!3m5!1s0x487af25a593ad171:0x8c660b11e1286914!8m2!3d53.0676289!4d-2.6060513!16s%2Fg%2F1v1sks2k?entry=ttu"
             rel="noopener noreferrer"
             target="_blank"

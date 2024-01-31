@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        spacing: "padding",
+      },
       fontFamily: {
         blackMango: ["var(--font-blackmango)"],
         augustScript: ["var(--font-august)"],
+        poppins: ["var(--font-poppins)"],
       },
       colors: {
         primary: "var(--color-orange)",
@@ -21,7 +25,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
   // daisyUI config (optional)
   daisyui: {
     styled: true,

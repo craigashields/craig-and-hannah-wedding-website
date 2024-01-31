@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
-import { blackMango } from "./styles/fonts";
+import { blackMango, poppins } from "./styles/fonts";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Craig and Hannah Wedding",
@@ -13,9 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${blackMango.variable} text-typography`}>
-        {children}
+    <html
+      lang="en"
+      className={`${blackMango.variable} ${poppins.variable} text-typography scroll-smooth`}
+    >
+      <body id="top">
+        <NavBar></NavBar>
+        <main className="mb-auto">{children}</main>
+        <Footer></Footer>
       </body>
     </html>
   );
