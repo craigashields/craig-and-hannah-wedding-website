@@ -7,7 +7,7 @@ export default function Faqs() {
       {/*<!-- Component: Basic accordion --> */}
       <section
         id="faqs"
-        className="bg-neutral-50 divide-y rounded divide-slate-200 container mx-auto py-10 sm:py-16 lg:py-16 xl:py-16 2xl:py-16 "
+        className="bg-neutral-50 divide-y divide-slate-200 container mx-auto py-10 sm:py-16 lg:py-16 xl:py-16 2xl:py-16 "
       >
         <div className="flex flex-col align-middle items-center justify-center text-center pb-8">
           <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-poppins text-4xl sm:text-4xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">

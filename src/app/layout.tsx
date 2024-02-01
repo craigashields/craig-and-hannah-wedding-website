@@ -19,7 +19,7 @@ export default function RootLayout({
       lang="en"
       className={`${blackMango.variable} ${poppins.variable} text-typography scroll-smooth`}
     >
-      <body id="top">
+      <body id="top" className="bg-white">
         <NavBar></NavBar>
         <main className="mb-auto">{children}</main>
         <Footer></Footer>
