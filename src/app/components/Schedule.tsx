@@ -88,7 +88,7 @@ export default function Schedule() {
           SCHEDULE
         </h2>
       </div>
-      <div className="container mx-auto px-36 text-white">
+      <div className="container mx-auto px-8 sm:px-16 md:px-28 lg:px-36 xl:px-44 2xl:px-44 3xl:px-48 text-white">
         <ul
           aria-label="Changelog feed"
           role="feed"

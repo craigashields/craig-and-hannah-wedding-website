@@ -1,4 +1,4 @@
-import siteMetadata from "../data/siteMetadata";
+import { siteMetadata } from "../data/siteMetadata";
 
 export default function Footer() {
   return (
@@ -24,8 +24,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-      <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <hr className="my-6 border-gray-200 sm:mx-auto " />
+      <span className="block text-sm text-gray-500 text-center ">
         {"We can't wait to see you there!"}
       </span>
     </footer>

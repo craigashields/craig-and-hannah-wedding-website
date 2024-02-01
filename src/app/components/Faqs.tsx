@@ -15,7 +15,7 @@ export default function Faqs() {
           </h2>
         </div>
         {faqs.map((faq) => (
-          <details key={faq.question} className="p-4 group" open>
+          <details key={faq.question} className="p-4 group">
             <summary className="relative cursor-pointer list-none pr-8 font-medium text-slate-700 transition-colors duration-300 focus-visible:outline-none group-hover:text-slate-900  [&::-webkit-details-marker]:hidden">
               {faq.question}
               <svg

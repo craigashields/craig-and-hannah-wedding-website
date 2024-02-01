@@ -9,9 +9,9 @@ export default function RSVPBanner() {
       }}
     >
       <div className="daisy-hero-overlay bg-opacity-10"></div>
-      <div className="container mx-auto pt-24 pb-24">
+      <div className="container mx-auto ">
         <div className="flex justify-center items-center align-middle text-center">
-          <div className="bg-white text-center w-2/4 p-10">
+          <div className="bg-white text-center w-3/4 p-10">
             <div className="flex flex-col align-middle items-center justify-center text-center">
               <h2 className="pb-2 relative mx-0 my-2.5 text-secondary  font-poppins text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
                 RSVP
@@ -22,7 +22,7 @@ export default function RSVPBanner() {
               {/* <h1 className="pb-2 relative mx-0 my-2.5 text-secondary font-bold font-blackMango text-4xl sm:text-3xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
               RSVP
             </h1>*/}
-              <p className="text-gray-500 pb-10 pt-10 items-center p-28">
+              <p className="text-gray-500 pb-10 pt-10 items-center">
                 Please come to our wedding! Add functionality to route to RSVP
                 page. Fix underline and auto-grow
               </p>

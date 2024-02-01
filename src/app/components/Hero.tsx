@@ -1,10 +1,10 @@
-import siteMetadata from "../data/siteMetadata";
+import { siteMetadata } from "../data/siteMetadata";
 
 export default function Hero() {
   return (
     <div id="hero" className="daisy-hero min-h-screen hero-bg">
       <div className="daisy-hero-overlay bg-opacity-10"></div>
-      <div className="daisy-hero-content text-center text-neutral-content flex-col">
+      <div className="daisy-hero-content text-center flex-col">
         <div className="max-w-md">
           <h1 className="font-bold font-blackMango text-5xl sm:text-5xl md:text-6xl lg:text-8xl uppercase">
             {siteMetadata.weddingInfo.bride}
