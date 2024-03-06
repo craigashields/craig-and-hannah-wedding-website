@@ -30,7 +30,7 @@ export default async function RsvpPage({
         >
           {guestData.length === 0 ? (
             <div>
-              <p className="mb-4">Sorry we couldn't find your party.</p>
+              <p className="mb-4">{"Sorry we couldn't find your party."}</p>
               <div className="pt-6">
                 <Link
                   className="transition-colors ease-in-out duration-300 px-6 text-sm md:text-base mt-10 bg-none border-solid border-2 border-primary text-primary uppercase w-2/4 py-2 hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
