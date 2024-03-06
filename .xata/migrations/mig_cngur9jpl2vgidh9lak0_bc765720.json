@@ -1,0 +1,19 @@
+{
+  "id": "mig_cngur9jpl2vgidh9lak0",
+  "parentID": "mig_cnguqdrpl2vgidh9laj0",
+  "checksum": "1:bc765720bea89434043f10b43b688dd9492bbf36c31b494b43c287c646a0a828",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "party_id",
+          "type": "link",
+          "link": {
+            "table": "rsvp_party"
+          }
+        },
+        "table": "rsvp_guest"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_cn5tvs70fh23n6mqrrkg",
+  "parentID": "mig_cn5tvlv0fh23n6mqrrjg",
+  "checksum": "1:54435c0d938dad65a9a15629cc2898c837f956bb2b891d24360273c2a8987035",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "attending",
+          "type": "string",
+          "defaultValue": "no response"
+        },
+        "table": "rsvp"
+      }
+    }
+  ]
+}

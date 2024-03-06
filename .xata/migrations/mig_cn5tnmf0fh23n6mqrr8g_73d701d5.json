@@ -1,0 +1,57 @@
+{
+  "id": "mig_cn5tnmf0fh23n6mqrr8g",
+  "parentID": "mig_cn5tn270fh23n6mqrr60",
+  "checksum": "1:73d701d5c4b4e04949a5a9ace9023d6204aa980efc342558540efbc886dd5293",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Rsvp"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "party_name",
+          "type": "string"
+        },
+        "table": "Rsvp"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "guest_name",
+          "type": "string"
+        },
+        "table": "Rsvp"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "attending",
+          "type": "string"
+        },
+        "table": "Rsvp"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "rsvp-date",
+          "type": "datetime"
+        },
+        "table": "Rsvp"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "dietary_requirements",
+          "type": "string"
+        },
+        "table": "Rsvp"
+      }
+    }
+  ]
+}

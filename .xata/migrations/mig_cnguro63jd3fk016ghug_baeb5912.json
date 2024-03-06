@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnguro63jd3fk016ghug",
+  "parentID": "mig_cngur9jpl2vgidh9lak0",
+  "checksum": "1:baeb5912874b7ff6e9e985b9f3a36a5454458d07394058e79b1fc417d8da25ee",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "party_name",
+        "table": "rsvp_guest"
+      }
+    }
+  ]
+}

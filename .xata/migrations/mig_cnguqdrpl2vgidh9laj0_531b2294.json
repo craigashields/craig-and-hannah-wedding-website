@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnguqdrpl2vgidh9laj0",
+  "parentID": "mig_cnguqbe3jd3fk016ghtg",
+  "checksum": "1:531b2294ec292f2424500662d42ac233edfd62905f56d30be49edf8f734b03c1",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "rsvp_guest",
+        "oldName": "rsvp"
+      }
+    }
+  ]
+}

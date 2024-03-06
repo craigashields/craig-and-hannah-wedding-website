@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Craig-A-Shields-s-workspace-65e3at.eu-west-1.xata.sh/db/craig-and-hannah-wedding",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

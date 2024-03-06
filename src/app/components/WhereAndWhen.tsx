@@ -1,10 +1,10 @@
 import Link from "next/link";
-
+import { siteMetadata } from "../data/siteMetadata";
 export default function WhereAndWhen() {
   return (
     <section
       id="whenandwhere"
-      className="container-none mx-auto py-10 sm:py-16 lg:py-16 xl:py-16 2xl:py-16 bg-neutral-50"
+      className="container-none mx-auto py-10 sm:py-16 lg:py-16 xl:py-16 2xl:py-16 bg-neutral-100"
     >
       <div className="grid grid-cols-1 xl:mx-20 gap-8 md:gap:4 lg:gap-4 xl:gap-4 p-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         <div className="flex flex-col align-middle items-center justify-center text-center">
@@ -29,9 +29,14 @@ export default function WhereAndWhen() {
             14<span className="align-super text-xs">th</span> September 2024
           </p>
           <p className="text-gray-500 pt-2 ">A SATURDAY</p>
-          <button className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary">
+          <Link
+            className="text-sm md:text-base mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
+            href={siteMetadata.calendarInvite}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             ADD TO CALENDAR
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col align-middle items-center justify-center text-center">
           <div className="pb-4">
@@ -60,11 +65,8 @@ export default function WhereAndWhen() {
             Nantwich, Cheshire
           </p>
           <p className="text-gray-500 pt-2 ">AT THE CHESTNUTS</p>
-          {/* <button className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2">
-            SEE ON MAP
-          </button> */}
           <Link
-            className="mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
+            className="text-sm md:text-base mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
             href="https://www.google.com/maps/place/Hollin+Green+Ln,+Nantwich/@53.0676321,-2.6086262,17z/data=!3m1!4b1!4m6!3m5!1s0x487af25a593ad171:0x8c660b11e1286914!8m2!3d53.0676289!4d-2.6060513!16s%2Fg%2F1v1sks2k?entry=ttu"
             rel="noopener noreferrer"
             target="_blank"

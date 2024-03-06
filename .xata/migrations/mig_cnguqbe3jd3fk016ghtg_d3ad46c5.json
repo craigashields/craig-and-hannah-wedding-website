@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnguqbe3jd3fk016ghtg",
+  "parentID": "mig_cngup4e3jd3fk016ghr0",
+  "checksum": "1:d3ad46c566de8b7f11bd2502424ae1fe3723ad73cef6d0c4adb2baab1a887182",
+  "operations": [
+    {
+      "addTable": {
+        "table": "rsvp_party"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "party_name",
+          "type": "string"
+        },
+        "table": "rsvp_party"
+      }
+    }
+  ]
+}

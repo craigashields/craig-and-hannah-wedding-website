@@ -90,7 +90,7 @@ export default function Schedule() {
       </div>
       <div className="container mx-auto px-8 sm:px-16 md:px-28 lg:px-36 xl:px-44 2xl:px-44 3xl:px-48 text-white">
         <ul
-          aria-label="Changelog feed"
+          aria-label="schedule"
           role="feed"
           className="relative flex flex-col gap-12 py-12 pl-6 before:absolute before:top-0 before:left-6 before:h-full before:-translate-x-1/2 before:border before:border-dashed before:border-slate-200 after:absolute after:top-6 after:left-6 after:bottom-6 after:-translate-x-1/2 after:border after:border-slate-200 "
         >
@@ -101,16 +101,13 @@ export default function Schedule() {
               className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-primary before:ring-2 before:ring-white"
             >
               <div className="flex flex-col flex-1 gap-4">
-                <h4 className="text-lg font-bold text-primary">
+                <h4 className="lg:text-3xl font-bold text-primary">
                   {stage.type}{" "}
-                  <span className="text-lg font-normal text-white">
+                  <span className="lg:text-xl font-normal text-white">
                     {" "}
                     : {stage.time}
                   </span>{" "}
                 </h4>
-                {/* <h3 className="text-lg font-normal text-primary">
-                  {stage.guestType}
-                </h3> */}
                 <p className=" text-white">{stage.description}</p>
               </div>
             </li>

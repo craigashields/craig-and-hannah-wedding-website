@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import { blackMango, poppins } from "./styles/fonts";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Craig and Hannah Wedding",
@@ -19,9 +20,11 @@ export default function RootLayout({
       lang="en"
       className={`${blackMango.variable} ${poppins.variable} text-typography scroll-smooth`}
     >
-      <body id="top" className="bg-white">
+      <body id="top" className="bg-white min-h-dvh flex flex-col">
+        {/* {children} */}
         <NavBar></NavBar>
         <main className="mb-auto">{children}</main>
+        <Toaster />
         <Footer></Footer>
       </body>
     </html>

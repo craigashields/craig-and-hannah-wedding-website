@@ -4,9 +4,11 @@ interface NavLink {
 }
 
 const headerNavLinks: NavLink[] = [
-  { href: "#whenandwhere", title: "When & Where" },
-  { href: "#schedule", title: "Schedule" },
-  { href: "#accommodation", title: "Accommodation" },
+  { href: "/#whenandwhere", title: "When & Where" },
+  { href: "/#schedule", title: "Schedule" },
+  { href: "/#registry", title: "Registry" },
+  { href: "/#accommodation", title: "Accommodation" },
+  { href: "/#faqs", title: "FAQs" },
 ];
 
 export default headerNavLinks;

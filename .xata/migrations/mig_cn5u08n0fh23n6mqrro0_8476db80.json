@@ -1,0 +1,18 @@
+{
+  "id": "mig_cn5u08n0fh23n6mqrro0",
+  "parentID": "mig_cn5tvvv0fh23n6mqrrlg",
+  "checksum": "1:8476db80e52e7f2209c8bdaeecbe5520d8bc5c810d27089c1955499520d4fbfa",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "dietary_requirements",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "none"
+        },
+        "table": "rsvp"
+      }
+    }
+  ]
+}

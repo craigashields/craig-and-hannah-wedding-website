@@ -1,0 +1,12 @@
+{
+  "id": "mig_cn5tva70fh23n6mqrrf0",
+  "parentID": "mig_cn5to670fh23n6mqrrb0",
+  "checksum": "1:355af50e083f791865a76608f2c22d1df0c3f94e8849765a9e0e8dfddc9dc1c2",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "temp"
+      }
+    }
+  ]
+}

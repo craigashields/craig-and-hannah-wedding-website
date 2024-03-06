@@ -20,16 +20,22 @@ const schedule = [
       "After the ceremony there will be drinks and snacks in the Tippees.",
   },
   {
-    type: "Speechs",
+    type: "Food & Speechs",
     time: "5.00pm",
     guestType: "Day Guests",
-    description: "Oh god speechs",
+    description: "Craig's favourite part and least favourite part!",
   },
   {
-    type: "Food",
-    time: "5.30pm",
-    guestType: "Day Guests",
-    description: "something about food",
+    type: "First Dance",
+    time: "7.30pm",
+    guestType: "All",
+    description: "Can you guess what it is?",
+  },
+  {
+    type: "Home Time",
+    time: "12.00am",
+    guestType: "All",
+    description: "Please arrange taxis for around 12am",
   },
 ];
 

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cn5to670fh23n6mqrrb0",
+  "parentID": "mig_cn5tnv70fh23n6mqrra0",
+  "checksum": "1:2629f62b91f69aaed489958502bf826eadfb42190238c69a9af0a8f4c6d3418b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "test",
+          "type": "datetime"
+        },
+        "table": "temp"
+      }
+    }
+  ]
+}

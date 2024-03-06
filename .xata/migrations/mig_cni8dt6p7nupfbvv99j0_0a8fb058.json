@@ -1,0 +1,18 @@
+{
+  "id": "mig_cni8dt6p7nupfbvv99j0",
+  "parentID": "mig_cni8dqjpl2vgidh9lgdg",
+  "checksum": "1:0a8fb0584020da533db0bd5ded4f1a46fce06171bff04443eecea2c4b3ebbea1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "attending",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "rsvp_guest"
+      }
+    }
+  ]
+}

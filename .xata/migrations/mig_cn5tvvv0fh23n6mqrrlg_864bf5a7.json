@@ -1,0 +1,16 @@
+{
+  "id": "mig_cn5tvvv0fh23n6mqrrlg",
+  "parentID": "mig_cn5tvs70fh23n6mqrrkg",
+  "checksum": "1:864bf5a7a61833f71d43fef836d1997dc372905e9e3f149edb837ddb535a971a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "rsvp_date",
+          "type": "datetime"
+        },
+        "table": "rsvp"
+      }
+    }
+  ]
+}

@@ -1,8 +1,6 @@
-import { siteMetadata } from "../data/siteMetadata";
-
 export default function Footer() {
   return (
-    <footer className="bg-white m-4">
+    <footer className="bg-white m-4 mt-auto">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-4 flex flex-col justify-center items-center">
         <div className=" w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-lg font-thin">
           <a href="#top">

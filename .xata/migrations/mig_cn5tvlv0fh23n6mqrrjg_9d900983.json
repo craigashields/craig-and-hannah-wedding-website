@@ -1,0 +1,16 @@
+{
+  "id": "mig_cn5tvlv0fh23n6mqrrjg",
+  "parentID": "mig_cn5tviv0fh23n6mqrrig",
+  "checksum": "1:9d9009834e462cf3d9503e94b5417ff861fa9a4ef864bb0bd8fc15b2cb980e96",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "guest_name",
+          "type": "string"
+        },
+        "table": "rsvp"
+      }
+    }
+  ]
+}

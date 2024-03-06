@@ -1,0 +1,12 @@
+{
+  "id": "mig_cn5tvb70fh23n6mqrrg0",
+  "parentID": "mig_cn5tva70fh23n6mqrrf0",
+  "checksum": "1:aa27a5b1adbd642a38f99f45a2fb092a011aec540f96e4457858ac3ce2da9258",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "Rsvp"
+      }
+    }
+  ]
+}

@@ -4,6 +4,9 @@ const siteMetadata = {
   description: "Wedding Website",
   language: "en-gb",
   locale: "en-GB",
+  email: "hannahandcraigwedding2024@gmail.com",
+  calendarInvite:
+    "https://drive.google.com/uc?export=download&id=1dZy8XKMDx4fxI8fA6uvI1rzmjsSWi3FE",
   weddingInfo: {
     bride: "Hannah",
     groom: "Craig",

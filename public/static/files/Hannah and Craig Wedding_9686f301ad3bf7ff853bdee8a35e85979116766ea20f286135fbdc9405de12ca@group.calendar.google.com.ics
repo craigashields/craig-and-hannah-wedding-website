@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hannah and Craig Wedding
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+DTSTART:20240914T133000Z
+DTEND:20240915T000000Z
+DTSTAMP:20240306T103041Z
+UID:1ot39qkth1n5u31fp1ivca62ea@google.com
+CREATED:20240306T102940Z
+DESCRIPTION:Hi\n\nWe can't wait to see you at our wedding.\n\nFor day guest
+ s\, please arrive by 2.30pm as the ceremony will be starting at 3pm. \nFor 
+ evening guests\, the party will start at 7pm.\n\nFor further information\, 
+ please visit https://hannahandcraigwedding.com\n\nThanks\n\nHannah and Crai
+ g
+LAST-MODIFIED:20240306T102940Z
+LOCATION:Hollin Green Lane\, Hollin Green Ln\, Nantwich CW5\, UK
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Hannah and Craig Wedding
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

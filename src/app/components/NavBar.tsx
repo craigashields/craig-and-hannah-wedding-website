@@ -1,9 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import headerNavLinks from "../data/headerNavLinks";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
+  const pathname = usePathname();
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -24,7 +25,7 @@ export default function NavBar() {
     <>
       {/*<!-- Header --> */}
       <header
-        className={`font-poppins-200 font-extralight fixed z-20 w-full  border-slate-200 ${
+        className={`font-poppins-200 font-extralight fixed z-10 w-full border-slate-200 ${
           isScrolling || isToggleOpen
             ? "bg-black bg-opacity-50"
             : "bg-opacity-100 "
@@ -36,8 +37,9 @@ export default function NavBar() {
           } border-white/40 relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]`}
         >
           <nav
+            style={{ height: "var(--navbar-height)" }}
             aria-label="main navigation"
-            className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
+            className="flex items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
             {/*      <!-- Mobile trigger --> */}
@@ -101,13 +103,16 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-            {/*      <!-- Actions --> */}
-            <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
+            <div
+              className={`ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 ${
+                pathname === "/rsvp" ? "invisible" : ""
+              }`}
+            >
               <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
-                  href="#rsvp"
+                  href="/#rsvp"
                   className={`transform ease-in-out hover:-translate-y-1 hover:scale-110 inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded ${
                     isScrolling ? "bg-primary" : "bg-secondary"
                   }  px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-secondary hover:shadow-sm focus:bg-secondary focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none`}
