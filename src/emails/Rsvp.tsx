@@ -53,7 +53,7 @@ export const RsvpEmail = ({
               <Img
                 style={image}
                 width={620}
-                src={`${baseUrl}/static/images/hannah_craig_getting_married.png`}
+                src={`${baseUrl}/static/hannah_craig_getting_married.png`}
               />
             </Row>
 
