@@ -25,10 +25,11 @@ export default function WhereAndWhen() {
           <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-poppins text-4xl sm:text-4xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
             WHEN
           </h2>
+          <p className="text-gray-500 pt-2 ">SATURDAY</p>
+
           <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
             14<span className="align-super text-xs">th</span> September 2024
           </p>
-          <p className="text-gray-500 pt-2 ">A SATURDAY</p>
           <Link
             className="text-sm md:text-base mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
             href={siteMetadata.calendarInvite}
@@ -61,13 +62,15 @@ export default function WhereAndWhen() {
           <h2 className="pb-2  relative mx-0 my-2.5 text-secondary font-poppins text-4xl sm:text-4xl md:text-6xl lg:text-6xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
             WHERE
           </h2>
-          <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
-            Nantwich, Cheshire
+          <p className="text-gray-500 pt-2 ">
+            THE CHESTNUTS, HOLLIN GREEN LANE
           </p>
-          <p className="text-gray-500 pt-2 ">AT THE CHESTNUTS</p>
+          <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
+            Burland, Nantwich CW5 8NN
+          </p>
           <Link
             className="text-sm md:text-base mt-6 bg-none border-solid border-2 border-secondary text-secondary uppercase w-2/4 py-2 hover:border-primary hover:text-primary"
-            href="https://www.google.com/maps/place/Hollin+Green+Ln,+Nantwich/@53.0676321,-2.6086262,17z/data=!3m1!4b1!4m6!3m5!1s0x487af25a593ad171:0x8c660b11e1286914!8m2!3d53.0676289!4d-2.6060513!16s%2Fg%2F1v1sks2k?entry=ttu"
+            href="https://maps.app.goo.gl/9TmwJccPw7Fof3UC9"
             rel="noopener noreferrer"
             target="_blank"
           >

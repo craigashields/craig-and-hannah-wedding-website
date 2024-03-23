@@ -40,7 +40,7 @@ export default function RSVPBanner() {
                 RSVP
               </h2>
               <p className="text-gray-500 pt-5 font-bold text-base sm:text-base md:text-lg lg:text-lg ">
-                By 15<span className="align-super text-xs">th</span> April 2024
+                By 15<span className="align-super text-xs">th</span> May 2024
               </p>
               <div className="pt-6 flex justify-center w-full">
                 {recordCount == 0 ? (

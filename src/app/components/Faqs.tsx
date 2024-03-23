@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export default function Faqs() {
   return (
@@ -32,7 +33,22 @@ export default function Faqs() {
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-black">
-                {faq.response}
+                <p>
+                  {faq.response}
+                  {faq.link && (
+                    <span>
+                      {" - "}
+                      <Link
+                        className="text-primary font-bold hover:text-secondary focus:text-secondary"
+                        href={faq.link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {faq.linkText}
+                      </Link>
+                    </span>
+                  )}
+                </p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

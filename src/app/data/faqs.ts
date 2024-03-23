@@ -11,7 +11,9 @@ const faqs = [
   },
   {
     question: "Are there any local taxi companies?",
-    response: "Yes, here are some, check out: TBC",
+    response: "Yes, look here for a list of taxi companies in the area",
+    link: "https://www.yell.com/s/taxis+and+private+hire+vehicles-nantwich.html",
+    linkText: "Taxi Companies",
   },
   {
     question: "Can I find the address with What 3 Words?",
@@ -21,7 +23,9 @@ const faqs = [
   {
     question: "I'm having issues with responsing to the RSVP on the website.",
     response:
-      "We're really sorry about that. If you're having issues, please email hannahandcraigwedding2024@gmail.com",
+      "We're really sorry about that. If you're having issues, please email ",
+    link: "mailto:Hjbandcrag4eva@gmail.com",
+    linkText: "Hjbandcrag4eva@gmail.com",
   },
 ];
 

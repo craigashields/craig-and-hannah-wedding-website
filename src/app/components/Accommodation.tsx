@@ -38,9 +38,9 @@ export default function Accommodation() {
               <h2 className="pb-2 relative mx-0 my-2.5 text-secondary font-poppins text-xl sm:text-3xl md:text-4xl lg:text-4xl before:absolute before:content-[''] before:w-6/12 before:h-0.5 before:bottom-0 before:left-1/4 before:border-b-2 before:border-primary">
                 {place.name}
               </h2>
-              <p className="text-gray-700 pt-2 px-2 sm:px-10 md:px-10 md:text-sm">
+              {/* <p className="text-gray-700 pt-2 px-2 sm:px-10 md:px-10 md:text-sm">
                 {place.description}
-              </p>
+              </p> */}
             </div>
 
             <Link

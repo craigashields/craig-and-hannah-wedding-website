@@ -17,7 +17,7 @@ const schedule = [
     time: "3.45pm",
     guestType: "Day Guests",
     description:
-      "After the ceremony there will be drinks and snacks in the Tippees.",
+      "After the ceremony there will be drinks and snacks in the Teepees.",
   },
   {
     type: "Food & Speechs",

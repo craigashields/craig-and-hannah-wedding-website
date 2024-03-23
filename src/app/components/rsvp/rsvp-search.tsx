@@ -22,7 +22,7 @@ import {
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
-  partyname: z.string().min(5, {
+  partyname: z.string().min(3, {
     message: "Party Name must be at least 5 characters.",
   }),
 });
@@ -37,8 +37,6 @@ interface RSVPSearchProps {
 
 export default function RSVPSearch({ searchResults }: RSVPSearchProps) {
   const [loading, setLoading] = useState(false);
-  const [recordCount, setRecordCount] = useState(0);
-  const [showError, setShowError] = useState(false);
   const { pending } = useFormStatus();
   const { toast } = useToast();
 
