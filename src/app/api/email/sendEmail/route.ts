@@ -70,7 +70,7 @@ export async function POST(
 
     const { data, error } = await resend.emails.send({
       from: "Hannah and Craig <response@hannahandcraigwedding.com>",
-      to: ["craig.a.shields84@gmail.com"],
+      to: ["craig.a.shields84@gmail.com", "hanjanebrooks@gmail.com"],
       subject: "Guests have Responded",
       react: RsvpEmail({
         coupleName: "Hannah and Craig",
