@@ -26,7 +26,7 @@ export default async function RsvpPage({
           style={{
             paddingTop: "var(--element-start-after-navbar)",
           }}
-          className="h-dvh w-full px-4 mx-auto"
+          className="w-full px-4 mx-auto pb-10"
         >
           {guestData.length === 0 ? (
             <div>

@@ -73,6 +73,7 @@ interface Guest {
   attending: boolean;
   dietary_requirements: string;
   rsvp_date: string;
+  guest_name?: string | undefined | null;
 }
 
 export default function RSVPGuestResponses(props: RsvpResponseProps) {
@@ -92,10 +93,22 @@ export default function RSVPGuestResponses(props: RsvpResponseProps) {
     defaultValues,
   });
 
-  function transformFormData(formData: FormData): Guest[] {
-    // Initialize an object to temporarily hold the guest data
-    const guestMap: Record<string, Partial<Guest>> = {};
+  function mergeGuestNames(
+    baseGuests: Guest[],
+    detailedGuests: RsvpGuestRecord[]
+  ): Guest[] {
+    return baseGuests.map((guest) => {
+      const match = detailedGuests.find(
+        (detailedGuest) => detailedGuest.id === guest.id
+      );
+      // Ensure guest_name is either a string or undefined, never null
+      const guestName = match ? match.guest_name : "undefined";
+      return { ...guest, guest_name: guestName };
+    });
+  }
 
+  function transformFormData(formData: FormData): Guest[] {
+    const guestMap: Record<string, Partial<Guest>> = {};
     Object.entries(formData).forEach(([key, value]) => {
       const [id, prop] = key.split("__", 2);
       const property = prop as "attending" | "dietary_requirements"; // Explicitly cast the property name
@@ -131,11 +144,15 @@ export default function RSVPGuestResponses(props: RsvpResponseProps) {
     setLoading(true);
 
     const requestData = transformFormData(data);
-
-    const endpoint = "/api/rsvp/updateGuestRsvp"; // Adjust this URL to your actual API route
+    const updateEndpoint = "/api/rsvp/updateGuestRsvp";
     const body = JSON.stringify(requestData);
+
+    const guestData = mergeGuestNames(requestData, props.guests);
+    const emailEndpoint = "/api/email/sendEmail";
+    const emailBody = JSON.stringify(guestData);
+
     try {
-      const response = await fetch(endpoint, {
+      const response = await fetch(updateEndpoint, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -164,6 +181,15 @@ export default function RSVPGuestResponses(props: RsvpResponseProps) {
 
       // Assuming your PATCH handler might return something useful
       const data = await response.json();
+
+      const emailResponse = await fetch(emailEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: emailBody,
+      });
+
       setLoading(false);
       toast({
         title: "Thank You!",
@@ -179,8 +205,6 @@ export default function RSVPGuestResponses(props: RsvpResponseProps) {
           </a>
         ),
       });
-
-      return data; // Or handle the success case as needed in your application
     } catch (error) {
       console.error("Failed to update guest status due to an error:", error);
       setLoading(false);

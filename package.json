@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev --dir src/emails"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -15,6 +16,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-toast": "^1.1.5",
+    "@react-email/components": "0.0.15",
     "@xata.io/client": "^0.29.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -22,7 +24,9 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "2.1.0",
     "react-hook-form": "^7.50.1",
+    "resend": "^3.2.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
