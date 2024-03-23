@@ -28,10 +28,6 @@ interface RsvpEmailProps {
   responseDate?: Date;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000/";
-
 export const RsvpEmail = ({
   coupleName,
   guests,
@@ -53,7 +49,7 @@ export const RsvpEmail = ({
               <Img
                 style={image}
                 width={620}
-                src={`${baseUrl}/static/hannah_craig_getting_married.png`}
+                src={`https://i.postimg.cc/1XDNYWr7/hannah-craig-getting-married.png`}
               />
             </Row>
 
