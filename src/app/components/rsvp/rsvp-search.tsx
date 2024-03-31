@@ -57,7 +57,7 @@ export default function RSVPSearch({ searchResults }: RSVPSearchProps) {
         const data = await res.json();
         if (data.totalCount == 0) {
           toast({
-            description: "Sorry we weren't able to find your party.",
+            description: "Sorry we weren't able to find you.",
             action: (
               <ToastAction className="hover:text-white" altText="Try again">
                 Try again
@@ -90,7 +90,7 @@ export default function RSVPSearch({ searchResults }: RSVPSearchProps) {
               <FormControl>
                 <Input
                   className="text-black text-md hover:ring-offset-2 hover:ring-2 hover:ring-accent focus:ring-offset-2 focus:ring-2 focus:ring-accent"
-                  placeholder="Enter Party Name"
+                  placeholder="Enter Your Name"
                   {...field}
                 />
               </FormControl>
